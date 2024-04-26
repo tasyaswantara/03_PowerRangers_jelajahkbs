@@ -13,6 +13,7 @@
     "@react-google-maps/api": "^2.19.3",
     "aos": "^2.3.4",
     "axios": "^1.6.8",
+    "leaflet-control-geocoder": "^1.8.0",
     "leaflet-routing-machine": "^3.2.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
