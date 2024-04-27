@@ -4,7 +4,7 @@ const databyid = async (body) => {
       const response = await axiosInstance.post(
         "info",
         {
-          id: body.id,
+          "id": body.id,
         },
         {
             headers:{
