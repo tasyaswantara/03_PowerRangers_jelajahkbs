@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://",
+  baseURL: "https://kbs-data.azurewebsites.net/",
 });
 
 export { axiosInstance };

@@ -25,7 +25,7 @@ const Index = () => {
       }, []);
     return ( 
        <MainLayout>
-        <img src={CloudLeft} data-aos="fade-right" className=" w-[50%] mt-[12vh]" alt="" />
+        <img src={CloudLeft} data-aos="fade-right" className=" w-[50%] " alt="" />
         <img src={CloudRight} data-aos="fade-left" className=" ml-auto w-[24%]" alt="" />
         <img src={CloudLeft2} data-aos="fade-right" className=" w-[20%] mt-[1vh]" alt="" />
         <h2 data-aos="fade-up" className=" mt-[12vh] mx-auto w-[70%] text-center text-primary-white text-xl font-bold">Selamat datang di dunia alami penuh fantasi.</h2>

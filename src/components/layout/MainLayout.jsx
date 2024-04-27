@@ -4,10 +4,16 @@ import Navbar from "../partials/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className=" bg-primary-green w-screen min-h-screen  md:max-w-sm md:mx-auto overflow-x-hidden relative">
-      <Navbar/>
+    <>
+    <div className=" w-full flex justify-center items-center h-[8vh]">
+    <Navbar/>
+    </div>
+   
+    <div className=" bg-primary-green w-screen min-h-screen md:max-w-sm md:mx-auto  relative pt-0">
+      
       {children}
     </div>
+    </>
   );
 };
 
