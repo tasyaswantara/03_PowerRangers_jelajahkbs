@@ -8,6 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         awal:"url('/src/assets/image/BG.svg')",
+        logo:"url('/src/assets/icon/Logo_zoo.svg')",
+        onboarding:"url('/src/assets/image/bg_section2.svg')",
         },
       colors: {
         primary:{

@@ -5,6 +5,7 @@ import { createBrowserRouter } from "react-router-dom";
 // Pages
 import Home from "../pages/Home";
 import Cover from "../pages/Cover";
+import Index from "../pages/Index";
 
 // import SignupPage from "../pages/SignupPage";
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     // element: <ProtectedRoute />,
     children: [
+      {
+        path: "/home",
+        element: <Index />,
+      },
       {
         path: "/",
         element: <Cover />,
