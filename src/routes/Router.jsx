@@ -6,6 +6,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Cover from "../pages/Cover";
 import Index from "../pages/Index";
+import Peta from "../pages/Peta";
 
 // import SignupPage from "../pages/SignupPage";
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Cover />,
+      },
+      {
+        path: "/peta",
+        element: <Peta />,
       },
     ],
   },
