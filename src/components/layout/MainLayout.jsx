@@ -4,7 +4,7 @@ import Navbar from "../partials/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className=" bg-primary-green w-screen min-h-screen max-w-md md:mx-auto   ">
+    <div className=" bg-primary-green w-screen min-h-screen  md:mx-auto   ">
       <Navbar/>
       {children}
     </div>
