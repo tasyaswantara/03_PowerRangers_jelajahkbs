@@ -7,11 +7,11 @@ import MainLayout from "../components/layout/MainLayout";
 import { Marker_peta } from "../components/utils/marker";
 import InfoPopup from "../components/peta/InfoPopup";
 import { ImLocation } from "react-icons/im";
-import Monyet from "../assets/icon/Monyet_hijau.png";
 import { databyid, getAllData } from "../api/services/handler";
 
 const Peta = () => {
   const [data, setData] = useState([]);
+  const [pesan,setPesan]=useState("");
 
   const handleSubmit = async () => {
     try {
@@ -26,9 +26,9 @@ const Peta = () => {
     handleSubmit();
   }, []);
 
-  const selectedData = data.find((item) => item.id === parseInt(1));
+//   const selectedData = data.find((item) => item.id === parseInt(1));
 
-  console.log(selectedData);
+//   console.log(selectedData);
 
   const [currentLoc, setCurrentLoc] = useState("Pintu Masuk");
   const [isDone, setIsdone] = useState(true);
@@ -48,7 +48,7 @@ const Peta = () => {
   };
   return (
     <>
-      {isOpen.status && <InfoPopup id={isOpen.id} data={data} />}
+      {isOpen.status && <InfoPopup id={isOpen.id} data={data} setData={setData} setIsOpen={setIsOpen} setPesan={setPesan} setCurLoc={setCurrentLoc} />}
 
       <MainLayout>
         <MapContainer
@@ -59,13 +59,16 @@ const Peta = () => {
           scrollWheelZoom={true}
         >
           <div
-            className={`w-full flex justify-center items-center h-10 top-8 md:top-[5vh] z-[999] absolute mx-auto ${
-              isOpen ? "hidden" : "block"
+            className={`w-full flex justify-center items-center h-10 top-14 md:top-[8vh] z-[999] absolute mx-auto ${
+              isOpen.status ? "hidden" : "block"
             }`}
           >
-            <div className="w-[50%] bg-primary-green flex justify-center items-center h-10 rounded-full absolute mx-auto text-white font-bold text-lg">
+            {pesan ? <div className="w-[80%] bg-primary-green flex justify-center items-center h-10 rounded-full absolute mx-auto text-white font-bold text-lg">
+              Kunjungi Hewan {pesan}
+            </div> : <div className="w-[50%] bg-primary-green flex justify-center items-center h-10 rounded-full absolute mx-auto text-white font-bold text-lg">
               PETA LOKASI
-            </div>
+            </div> }
+            
           </div>
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
           {data.map((data) => {
@@ -95,8 +98,8 @@ const Peta = () => {
           })}
         </MapContainer>
         <div
-          className={`w-full absolute bottom-20 md:bottom-24 z-[999] flex justify-center items-center ${
-            isOpen ? "hidden" : "block"
+          className={`w-full absolute bottom-28 md:bottom-22 z-[999] flex justify-center items-center ${
+            isOpen.status ? "hidden" : "block"
           }`}
         >
           <div className="bg-white rounded-3xl w-[80%] mx-auto h-24 px-6 py-4">

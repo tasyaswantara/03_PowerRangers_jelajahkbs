@@ -10,6 +10,7 @@ import Jerapah_default from  "../../assets/icon/Jerapah_default.png"
 import Jerapah_hijau from  "../../assets/icon/Jerapah_hijau.png"
 import Wallaby_default from  "../../assets/icon/Wallaby_default.png"
 import Wallaby_hijau from  "../../assets/icon/Wallaby_hijau.png"
+import Gajah from "../../assets/icon/Gajah_kuning.png"
 
 
 const Marker_peta =[
@@ -26,13 +27,13 @@ const Marker_peta =[
         marker_hijau: Burung_hijau,        
     },
     {
-        id: 3,
+        id: 6,
         nama_hewan: "Elang Bondol",
         marker_default:  Burung_default,
         marker_hijau: Burung_hijau,        
     },
     {
-        id: 4,
+        id: 11,
         nama_hewan: "Komodo",
         marker_default:  Komodo_default,
         marker_hijau: Komodo_hijau,        
@@ -44,47 +45,48 @@ const Marker_peta =[
         marker_hijau: Ikan_hijau,        
     },
     {
-        id: 6,
+        id: 3,
         nama_hewan: "Jerapah",
         marker_default:  Jerapah_default,
         marker_hijau: Jerapah_hijau,        
     },
     {
-        id: 7,
+        id: 4,
         nama_hewan: "Wallaby",
         marker_default:  Wallaby_default,
         marker_hijau: Wallaby_hijau,        
     },
     {
-        id: 8,
+        id: 7,
         nama_hewan: "Orangutan",
-        marker_default:  Monyet_default,
-        marker_hijau: Monyet_hijau,        
-    },
-    {
-        id: 9,
-        nama_hewan: "Bekantan",
         marker_default:  Monyet_default,
         marker_hijau: Monyet_hijau,        
     },
     {
         id: 10,
-        nama_hewan: "Orangutan",
+        nama_hewan: "Bekantan",
         marker_default:  Monyet_default,
         marker_hijau: Monyet_hijau,        
     },
+ 
     {
-        id: 11,
+        id: 9,
         nama_hewan: "Harimau Benggala",
         marker_default:  Komodo_default,
         marker_hijau: Komodo_hijau,        
     },
     {
-        id: 12,
+        id: 8,
         nama_hewan: "Kudanil",
         marker_default:  Komodo_default,
         marker_hijau: Komodo_hijau,        
     },
+    // {
+    //     id: 13,
+    //     nama_hewan: "Gajah",
+    //     marker_default:Gajah,
+    //     marker_hijau: Gajah,        
+    // },
 
 
 ]

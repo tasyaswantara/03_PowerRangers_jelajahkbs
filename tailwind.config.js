@@ -10,6 +10,7 @@ export default {
         awal:"url('/src/assets/image/BG.svg')",
         logo:"url('/src/assets/icon/Logo_zoo.svg')",
         onboarding:"url('/src/assets/image/bg_section2.svg')",
+        cloud:"url('/src/assets/image/Cloud.svg')",
         },
       colors: {
         primary:{
