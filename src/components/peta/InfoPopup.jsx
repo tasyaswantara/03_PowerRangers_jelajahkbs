@@ -42,7 +42,7 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
             <i>{selectedData.bahasa_latin}</i>
           </p>
         </div>
-        <div className=" bg-secondary-lightgreen bg-cloud bg-cover w-full min-h-[30vh] h-fit pt-6 relative">
+        <div className=" bg-secondary-lightgreen bg-cloud bg-cover w-full min-h-[40vh] h-fit pt-6 relative">
           <div className=" w-[50%] h-12 mx-auto bg-secondary-lightgray text-primary-green font-bold flex justify-center items-center border-2 border-solid rounded-lg border-primary-black">
             STATUS POPULASI
           </div>
@@ -62,7 +62,7 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
           <img src={selectedData.peta_habitat} className="w-[90%] h-[60%] mt-10 mx-auto" alt="" />
         </div>
 
-        <div className=" bg-primary-green w-full h-[40vh] pt-6">
+        <div className=" bg-primary-green w-full h-[50vh] pt-6">
           <div className=" w-[50%] h-12 mx-auto bg-secondary-lightgray text-primary-green font-bold flex justify-center items-center border-2 border-solid rounded-lg border-primary-black">
             TAHUKAH KAMU?
           </div>

@@ -59,7 +59,7 @@ const Peta = () => {
           scrollWheelZoom={true}
         >
           <div
-            className={`w-full flex justify-center items-center h-10 top-24 md:top-[8vh] z-[999] absolute mx-auto ${
+            className={`w-full flex justify-center items-center h-10 top-24 md:top-[10vh] z-[999] absolute mx-auto ${
               isOpen.status ? "hidden" : "block"
             }`}
           >
