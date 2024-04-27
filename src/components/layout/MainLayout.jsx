@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from "../partials/Navbar";
 
 
+
 const MainLayout = ({ children }) => {
+
   return (
     <>
     <div className=" w-full flex justify-center items-center h-[8vh]">

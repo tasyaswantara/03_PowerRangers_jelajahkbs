@@ -81,12 +81,7 @@ const Marker_peta =[
         marker_default:  Komodo_default,
         marker_hijau: Komodo_hijau,        
     },
-    // {
-    //     id: 13,
-    //     nama_hewan: "Gajah",
-    //     marker_default:Gajah,
-    //     marker_hijau: Gajah,        
-    // },
+ 
 
 
 ]

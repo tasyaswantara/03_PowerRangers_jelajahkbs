@@ -8,10 +8,16 @@ import { Marker_peta } from "../components/utils/marker";
 import InfoPopup from "../components/peta/InfoPopup";
 import { ImLocation } from "react-icons/im";
 import { databyid, getAllData } from "../api/services/handler";
+import Gajah from "../assets/icon/Gajah_kuning.png"
+import Quis_card from "../components/peta/Quis_card";
 
 const Peta = () => {
   const [data, setData] = useState([]);
   const [pesan,setPesan]=useState("");
+  const [isOpen, setIsOpen] = useState({id:"",status:false});
+  const [currentLoc, setCurrentLoc] = useState("Pintu Masuk");
+  const [isOpenQuiz,setIsOpenQuiz]= useState(false)
+  const [angka,setangka]=useState()
 
   const handleSubmit = async () => {
     try {
@@ -30,8 +36,7 @@ const Peta = () => {
 
 //   console.log(selectedData);
 
-  const [currentLoc, setCurrentLoc] = useState("Pintu Masuk");
-  const [isDone, setIsdone] = useState(true);
+   
 
   useEffect(() => {
     AOS.init({
@@ -41,15 +46,30 @@ const Peta = () => {
     });
   }, []);
 
-  const [isOpen, setIsOpen] = useState({id:"",status:false});
+ 
 
   const handleMarkerClick = (id) => {
+    
+    // data.map((item)=>{
+    //     if(item.dikunjungi){
+    //         setangka+=1;
+    //     }
+    // })
+    // if(angka==11){
+    //     console.log("yayy selesai semua")
+    // }
+    
+   
+   
+    
     setIsOpen({ id: id, status: true });
+    
+    
   };
   return (
     <>
-      {isOpen.status && <InfoPopup id={isOpen.id} data={data} setData={setData} setIsOpen={setIsOpen} setPesan={setPesan} setCurLoc={setCurrentLoc} />}
-
+      {isOpen.status && <InfoPopup id={isOpen.id} data={data} setData={setData} setIsOpen={setIsOpen} setPesan={setPesan} setCurLoc={setCurrentLoc} setIsOpenQuiz={setIsOpenQuiz}/>}
+       {isOpenQuiz && <Quis_card setOpenQuis={setIsOpenQuiz}/> } 
       <MainLayout>
         <MapContainer
           className="w-screen md:max-w-sm h-screen"
@@ -60,7 +80,7 @@ const Peta = () => {
         >
           <div
             className={`w-full flex justify-center items-center h-10 top-24 md:top-[10vh] z-[999] absolute mx-auto ${
-              isOpen.status ? "hidden" : "block"
+              isOpen.status || isOpenQuiz ? "hidden" : "block"
             }`}
           >
             {pesan ? <div className="w-[80%] bg-primary-green flex justify-center items-center h-10 rounded-full absolute mx-auto text-white font-bold text-lg">
@@ -96,10 +116,13 @@ const Peta = () => {
               ></Marker>
             );
           })}
+          <Marker position={[-7.29648700365211, 112.73570486559005]}
+          icon={L.icon({
+            iconUrl:Gajah})}></Marker>
         </MapContainer>
         <div
           className={`w-full absolute bottom-20 md:bottom-22 z-[999] flex justify-center items-center ${
-            isOpen.status ? "hidden" : "block"
+            isOpen.status || isOpenQuiz ? "hidden" : "block"
           }`}
         >
           <div className="bg-white rounded-3xl w-[80%] mx-auto h-24 px-6 py-4">

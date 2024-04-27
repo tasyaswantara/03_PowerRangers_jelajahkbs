@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 // import { databyid, getAllData } from "../../api/services/handler";
-const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
+const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc,setIsOpenQuiz }) => {
     const navigate= useNavigate()
   const selectedData = data.find((item) => item.id === parseInt(id));
 
@@ -24,6 +24,9 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
     setPesan(selectedData1.namaspesies)
 }else{
         setPesan("Siamang")
+    }
+    if(id == 10){
+        setIsOpenQuiz(true)
     }
    
   
