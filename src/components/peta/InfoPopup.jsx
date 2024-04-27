@@ -49,7 +49,7 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
           <div className=" w-[90%] mx-auto font-bold h-14 border-t-2 border-b-2 border-solid border-primary-black mt-[20%] flex justify-between items-center px-4">
             <p className=" w-16  text-center">RENTAN</p>
             <p className=" w-24 text-center ">TERANCAM KRITIS</p>
-            <div className="w-[120px] h-[120px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[110px] text-white font-bold">
+            <div className="w-[130px] h-[130px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[32vw] text-white font-bold">
               TERANCAM
             </div>
           </div>
@@ -75,7 +75,7 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
             {selectedData.funfact}
           </p>
         </div>
-        <div className=" bg-secondary-lightgreen bg-cloud bg-cover w-full min-h-[50vh] pt-6">
+        <div className=" bg-secondary-lightgreen bg-cloud bg-cover w-full min-h-[50vh] pt-6 pb-6">
           <div className=" text-center w-[60%] h-16 mx-auto bg-secondary-lightgray text-primary-green font-bold flex justify-center items-center border-2 border-solid rounded-lg border-primary-black">
             PROGRAM REINTRODUKSI DAN REHABILITASI
           </div>
