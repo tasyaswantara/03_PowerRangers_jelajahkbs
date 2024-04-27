@@ -49,7 +49,7 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc }) => {
           <div className=" w-[90%] mx-auto font-bold h-14 border-t-2 border-b-2 border-solid border-primary-black mt-[20%] flex justify-between items-center px-4">
             <p className=" w-16  text-center">RENTAN</p>
             <p className=" w-24 text-center ">TERANCAM KRITIS</p>
-            <div className="w-[120px] h-[120px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[140px] text-white font-bold">
+            <div className="w-[120px] h-[120px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[110px] text-white font-bold">
               TERANCAM
             </div>
           </div>
