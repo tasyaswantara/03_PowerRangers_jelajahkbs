@@ -59,7 +59,7 @@ const Peta = () => {
           scrollWheelZoom={true}
         >
           <div
-            className={`w-full flex justify-center items-center h-10 top-14 md:top-[8vh] z-[999] absolute mx-auto ${
+            className={`w-full flex justify-center items-center h-10 top-24 md:top-[8vh] z-[999] absolute mx-auto ${
               isOpen.status ? "hidden" : "block"
             }`}
           >
@@ -98,7 +98,7 @@ const Peta = () => {
           })}
         </MapContainer>
         <div
-          className={`w-full absolute bottom-28 md:bottom-22 z-[999] flex justify-center items-center ${
+          className={`w-full absolute bottom-20 md:bottom-22 z-[999] flex justify-center items-center ${
             isOpen.status ? "hidden" : "block"
           }`}
         >
