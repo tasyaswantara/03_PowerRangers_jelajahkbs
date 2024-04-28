@@ -1,6 +1,7 @@
 import Mask from "../../assets/image/Mask.svg";
 import { useState, useEffect } from "react";
 import Peta from "../../assets/image/peta.png";
+import { Status_data } from "./constraints";
 import { GoArrowUpRight } from "react-icons/go";
 import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
@@ -8,7 +9,7 @@ import Button from "../ui/Button";
 const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc,setIsOpenQuiz }) => {
     const navigate= useNavigate()
   const selectedData = data.find((item) => item.id === parseInt(id));
-
+  const status_data = Status_data.find((item) => item.status === selectedData.status);
   const handleclick = () => {
     const updatedData = data.map(item => {
       if (item.id === parseInt(id)) {
@@ -50,9 +51,9 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc,setIsOpenQuiz
             STATUS POPULASI
           </div>
           <div className=" w-[90%] mx-auto font-bold h-14 border-t-2 border-b-2 border-solid border-primary-black mt-[20%] flex justify-between items-center px-4">
-            <p className=" w-16  text-center">RENTAN</p>
-            <p className=" w-24 text-center ">TERANCAM KRITIS</p>
-            <div className="w-[130px] px-6 text-center h-[130px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[32vw] text-white font-bold">
+            <p className=" w-16  text-center">{status_data.left}</p>
+            <p className=" w-24 text-center ">{status_data.right}</p>
+            <div className={`w-[130px] px-6 text-center h-[130px] rounded-full bg-[#FA4B00] flex justify-center items-center absolute left-[32vw] text-white font-bold`}>
               {selectedData.status}
             </div>
           </div>
