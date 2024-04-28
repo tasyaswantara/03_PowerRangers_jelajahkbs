@@ -3,7 +3,7 @@ import Donasi2 from "../assets/image/Donasi2.svg"
 const Donasi = () => {
     return ( 
         <MainLayout>
-            <div className=" py-6 flex  flex-col items-center gap-8 text-white px-4 text-center justify-center">
+            <div className=" py-6 flex  flex-col items-center gap-8 text-white px-4 text-center justify-center h-screen">
             <h2 className=" font-extrabold text-secondary-yellow text-4xl text-center">Yuk berikan aksi nyatamu!</h2>
             <p> Kamu telah mengetahui status populasi dari satwa-satwa di sini. Maukah kamu menolong satwa yang terancam punah?</p>
             <img src={Donasi2} className=" w-[80%] mx-auto" alt="" />

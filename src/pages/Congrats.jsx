@@ -13,7 +13,7 @@ const Congrats = () => {
             <img src={Gambar} className=" w-[80%] mx-auto" alt="" />
 
             <p>Kamu juga telah mengetahui berbagai informasi dari hewan-hewan yang dikunjungi.</p>
-
+            <a  className=" w-[50%] h-9 flex justify-center items-center font-bold bg-secondary-lightgreen text-primary-green rounded-full"> Green Living</a>
             <p>Kamu dapat memperkuat kesadaran akan pentingnya perlindungan lingkungan dan konservasi satwa liar dengan menerapkan konsep:</p>
 
             <div className=" mx-auto w-[50%]"></div>
