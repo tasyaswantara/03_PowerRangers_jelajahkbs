@@ -8,25 +8,14 @@ import Index from "../pages/Index";
 import Peta from "../pages/Peta";
 import Congrats from "../pages/Congrats";
 import Donasi from "../pages/Donasi";
+import Feedback from "../pages/Feedback";
 
 // import SignupPage from "../pages/SignupPage";
 
 const router = createBrowserRouter([
-  // {
-  //   element: <AuthRoute />,
-  //   children: [
-  //     {
-  //       path: "/login",
-  //       element: <LoginPage />,
-  //     },
-  //     {
-  //       path: "/signup",
-  //       element: <SignupPage />,
-  //     },
-  //   ],
-  // },
+
   {
-    // element: <ProtectedRoute />,
+   
     children: [
       {
         path: "/home",
@@ -47,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/donasi",
         element: <Donasi />,
+      },
+      {
+        path: "/feedback",
+        element: <Feedback />,
       },
     ],
   },
