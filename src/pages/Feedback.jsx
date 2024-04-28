@@ -18,7 +18,7 @@ const Feedback = () => {
     
     return ( 
         <MainLayout>
-            <div className="h-screen bg-secondary-lightgreen pt-24 flex flex-col items-center">
+            <div className="h-fit bg-secondary-lightgreen pt-20 pb-6 flex flex-col items-center">
                 <h2 className="text-primary-green text-3xl font-bold text-center mb-6">Beri Kami Nilai !</h2>
            
                 <div className="mb-4">
@@ -33,7 +33,7 @@ const Feedback = () => {
                     <textarea name="" className="p-9 w-[80%] h-60 rounded-2xl" id="" cols="30" rows="10"></textarea>
                 </div>
                 
-                <Link to="/" className="w-[80%] h-12 bg-secondary-yellow flex justify-center items-center text-primary-green font-bold rounded-full">Selesai</Link>
+                <Link to="/" className="w-[70%] h-12 bg-secondary-yellow flex justify-center items-center text-primary-green font-bold rounded-full">Selesai</Link>
             </div>
         </MainLayout>
     );

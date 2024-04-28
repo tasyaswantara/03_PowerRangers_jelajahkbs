@@ -121,7 +121,7 @@ const Peta = () => {
             iconUrl:Gajah})}></Marker>
         </MapContainer>
         <div
-          className={`w-full absolute bottom-20 md:bottom-22 z-[999] flex justify-center items-center ${
+          className={`w-full absolute bottom-12 md:bottom-22 z-[999] flex justify-center items-center ${
             isOpen.status || isOpenQuiz ? "hidden" : "block"
           }`}
         >
