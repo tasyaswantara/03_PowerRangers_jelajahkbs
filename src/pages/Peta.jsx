@@ -10,6 +10,7 @@ import { ImLocation } from "react-icons/im";
 import { databyid, getAllData } from "../api/services/handler";
 import Gajah from "../assets/icon/Gajah_kuning.png"
 import Quis_card from "../components/peta/Quis_card";
+import { useNavigate } from "react-router-dom";
 
 const Peta = () => {
   const [data, setData] = useState([]);
@@ -17,7 +18,7 @@ const Peta = () => {
   const [isOpen, setIsOpen] = useState({id:"",status:false});
   const [currentLoc, setCurrentLoc] = useState("Pintu Masuk");
   const [isOpenQuiz,setIsOpenQuiz]= useState(false)
-  const [angka,setangka]=useState()
+  const  navigate=useNavigate();
 
   const handleSubmit = async () => {
     try {
@@ -50,14 +51,6 @@ const Peta = () => {
 
   const handleMarkerClick = (id) => {
     
-    // data.map((item)=>{
-    //     if(item.dikunjungi){
-    //         setangka+=1;
-    //     }
-    // })
-    // if(angka==11){
-    //     console.log("yayy selesai semua")
-    // }
     
    
    

@@ -17,6 +17,26 @@ const InfoPopup = ({ id, data,setData,setIsOpen,setPesan,setCurLoc,setIsOpenQuiz
       }
       return item;
     });
+    setData(prevData => {
+      const updatedData = prevData.map(item => {
+          // Jika item telah dikunjungi, tambahkan 1 ke nilai setangka
+          if (item.id === id && item.dikunjungi) {
+              return { ...item, dikunjungi: true };
+          }
+          return item;
+      });
+
+      const visitedCount = updatedData.filter(item => item.dikunjungi).length;
+
+
+
+      if (visitedCount === 10) {
+          navigate('/congratulations')
+      }
+
+      return updatedData;
+    });
+
     setData(updatedData);
     setCurLoc(selectedData.namaspesies);
     setIsOpen({ id: id, status: false });
