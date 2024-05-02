@@ -10,7 +10,7 @@ const Quis_card = ({setOpenQuis}) => {
     }
     return ( 
         <div className=" fixed z-[999] backdrop-blur-sm w-screen md:hidden h-screen flex justify-center items-center">
-            <div className=" w-96 h-[80vh] bg-secondary-lightgreen  bg-cloud bg-cover flex flex-col items-center rounded-2xl p-6 gap-6">
+            <div className=" w-[320px] h-[70vh] min-h-[550px] bg-secondary-lightgreen  bg-cloud bg-cover flex flex-col items-center rounded-2xl p-6 gap-6">
             <div className=" w-[50%] h-12 mx-auto p-2 bg-secondary-lightgray text-primary-green font-bold flex justify-center items-center border-2 border-solid rounded-lg border-primary-black">
             MAIN YUK!
           </div>
