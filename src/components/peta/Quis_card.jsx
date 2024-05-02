@@ -17,15 +17,15 @@ const Quis_card = ({setOpenQuis}) => {
           <p className=" text-center font-bold">Di antara reptil, dia yang paling ganas dan hidup di tempat yang gersang, siapakah dia?</p>
 
           <img src={quis} className="" alt="" />
-          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12  rounded-full flex  items-center px-4 text-primary-green ${isAnswer ? " bg-red-600": "bg-secondary-lightgray"}`}>
+          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12 gap-2  rounded-full flex  items-center px-2 text-primary-green ${isAnswer ? " bg-red-600": "bg-secondary-lightgray"}`}>
             <div className=" w-8 h-8 rounded-full bg-secondary-lightgreen text-primary-green flex justify-center items-center font-bold">A</div>
             <p className=" font-bold">Buaya</p>
           </button>
-          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12  rounded-full flex  items-center px-4 text-primary-green ${isAnswer ? " bg-green-500": "bg-secondary-lightgray"}`}>
+          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12 gap-2  rounded-full flex  items-center px-2 text-primary-green ${isAnswer ? " bg-green-500": "bg-secondary-lightgray"}`}>
             <div className=" w-8 h-8 rounded-full bg-secondary-lightgreen text-primary-green flex justify-center items-center font-bold">B</div>
             <p className=" font-bold">Komodo</p>
           </button>
-          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12  rounded-full flex  items-center px-4 text-primary-green ${isAnswer ? " bg-red-600": "bg-secondary-lightgray"}`}>
+          <button onClick={()=>setIsAnswer(!isAnswer)} className={`w-32 h-12 gap-2  rounded-full flex  items-center px-2 text-primary-green ${isAnswer ? " bg-red-600": "bg-secondary-lightgray"}`}>
             <div className=" w-8 h-8 rounded-full bg-secondary-lightgreen text-primary-green flex justify-center items-center font-bold">C</div>
             <p className=" font-bold">Ular</p>
           </button>
