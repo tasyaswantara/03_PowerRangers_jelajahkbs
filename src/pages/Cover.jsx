@@ -16,7 +16,7 @@ const Cover = () => {
       }, 2000);
   }, []);
   return (
-    <main className=" bg-primary-green bg-awal bg-cover w-screen h-screen max-w-md md:mx-auto flex justify-center items-center  pb-[8vh]">
+    <main className=" bg-primary-green bg-awal bg-cover w-screen h-screen max-w-md md:max-w-full md:mx-auto flex justify-center items-center  pb-[8vh]">
       
         <h1
           data-aos="fade-up"

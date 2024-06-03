@@ -65,7 +65,7 @@ const Peta = () => {
        {isOpenQuiz && <Quis_card setOpenQuis={setIsOpenQuiz}/> } 
       <MainLayout>
         <MapContainer
-          className="w-screen md:max-w-sm h-screen"
+          className="w-screen md:max-w-full h-screen"
           center={[-7.295589735374133, 112.73733134664052]}
           zoomControl={false}
           zoom={17}

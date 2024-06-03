@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
     {show && <PopupOut setShow={setShow}/>}
-    <div className=" w-full h-[8vh] flex justify-between items-center gap-6 bg-secondary-yellow fixed z-[999] md:max-w-sm  px-[5vw]">
+    <div className=" w-full h-[8vh] flex justify-between items-center gap-6 bg-secondary-yellow fixed z-[999] md:max-w-full  px-[5vw]">
             <img src={Logo} className=" bg-logo w-20 h-10 bg-cover"/>
             {window.location.pathname !== "/congratulations" && window.location.pathname !== "/donasi" && window.location.pathname !== "/feedback" && 
              <img onClick={()=>{ setShow(!show)}} src={Cross} className=" w-8" alt="" />
